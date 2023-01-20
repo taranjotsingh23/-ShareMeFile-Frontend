@@ -1,120 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="style.css" />
-    <title>ShareMeFile - Best File Sharing App</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="brandIcon">
-        <h2 class="brand-name">ShareMeFile</h2>
-        <img src="./images/brand_icon.png" alt="BrandIcon" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ShareMeFile - Best File Sharing App </title>
+    <link rel="stylesheet" href="frontStyle.css">
+    <link rel="icon" href="./images/brand_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+
+    <script src="mailScript.js" type="text/javascript"></script>
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+         emailjs.init("ooBbT6cvcOruCc-8z");
+      })();
+    </script>
+</head>
+<body>
+    
+<!--            HEADER SECTION               -->
+
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html" style="display: flex; align-items: center;">
+              <h2 class="brand-name" style="color: white; margin-right: 10px;">ShareMeFile</h2>
+              <img src="./images/brand_icon.png">
+            </a>
+                <div class="nav-links" id="navLinks">
+                   
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#testimonials">TESTIMONIALS</a></li>
+                        <li><a href="#team">OUR TEAM</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+    <div class="text-box">
+       <h1>Welcome to  ShareMeFile </h1> 
+        <p>SHARE UNLIMITED FILES ANYTIME...</p>
+
+        <a href="index.html" class="btn"> Start Share </a>
+
+    </div>
+    </section>
+
+    <!--          SERVICE SECTION           -->
+
+    <section class="serv" id="about">
+        <h1>SERVICES WE OFFER</h1>
+        <p>We provide a variety of servies to our customers</p>
+
+        <div class="row">
+            <div class="serv-col">
+                <h3> Unlimited File Share </h3>
+                <p>We provide sharing anytype of file, FREE of cost!  </p>
+            </div>
+            <div class="serv-col">
+                <h3>Quick Share</h3>
+                <p>Get your shared file in no time.</p>
+            </div>
+            <div class="serv-col">
+                <h3> All for FREE </h3>
+                <p>All our resources and website are free to use. </p>
+            </div>
+
+        </div>
+
+    </section>
+
+<!--               TESTIMONIAL SECTION         -->
+
+<section class="testimonials" id="testimonials">
+
+    <h1>Our Testimonials</h1>
+    <p>What our Customers have to say</p>
+
+    <div class="row">
+        <div class="test-col">
+            <img src="./images/test1.jpg">
+            <div>
+                <p>It is one of the best website i have found on the internet as, it works seamlessly. I liked the theme and overall working of this website. I can now share my work files with my colleagues in just a click of a button.</p>
+                <h3>Harpreet Singh</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="test-col">
+            <img src="./images/test2.jpg">
+            <div>
+                <p>I recently got to know about this site and using it on daily basis. My file data is absolutely safe here without any 3rd party data-breach.</p>
+                <h3>Riya Gadhwal</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+        </div>
+       <div class="test-col">
+            <img src="./images/test3.jpg">
+            <div>
+                <p>I love how these people just help us Share files in no extra cash or tax involved with full privacy. Kudos to you guys and keep it up. It exceeded my expectations. Love this website.</p>
+                <h3>Nishant Garg</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+       
+    </div>
+
+
+</section>
+
+<!--            TEAM SECTION         -->
+
+<section class="team" id="team">
+    <div class="rowt">
+      <h1 class="h1-t">Our Team</h1>
+    </div>
+    <div class="row-t">
+      <!-- Column 1-->
+      <div class="column-t">
+        <div class="card">
+          <div class="img-container">
+            <img src="./images/pr1.jpeg" />
+          </div>
+          <h3>Simarpreet Singh</h3>
+          <p>Founder</p>
+          <div class="icons-t">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/simarpreet-singh-b59759207/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="singhsimarpreet20@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div id="theme" class="">🌞</div>
-    </nav>
-    <main class="main-container">
-      <section class="upload-container">
-        <div class="drop-zone">
-          <div class="icon-container">
-            <img
-              src="./images/file_upload_icon.png"
-              alt="File Icon"
-              draggable="false"
-              class="left"
-            />
-            <img
-              src="./images/file_upload_icon.png"
-              alt="File Icon"
-              draggable="false"
-              class="center"
-            />
-            <img
-              src="./images/file_upload_icon.png"
-              alt="File Icon"
-              draggable="false"
-              class="right"
-            />
+      <!-- Column 2-->
+      <div class="column-t">
+        <div class="card">
+          <div class="img-container">
+            <img src="./images/pr2.png" height="110rem"/>
           </div>
-          <input type="file" name="" id="browseFile" />
-          <div class="browseTitle">
-            Drop your files here or, <span class="browseBtn">Browse</span>
+          <h3>Taranjot Singh</h3>
+          <p>Developer</p>
+          <div class="icons-t">
+            <a href="https://twitter.com/Taranjotsingh23?t=mAHqoNvLaArJpV5KWhGubg&s=08">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/taranjot-singh-bbb875202">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/taranjotsingh23">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="taranjot11111@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
         </div>
-        <div class="progress-container">
-          <div class="bg-progress"></div>
-          <div class="inner-container">
-            <div class="title">Uploading...</div>
-            <div class="percent-container"><span id="percent">0</span>%</div>
-            <div class="progress-bar"></div>
+      </div>
+      <!-- columnt 3-->
+      <div class="column-t">
+        <div class="card">
+          <div class="img-container">
+            <img src="./images/pr3.jpeg" />
+          </div>
+          <h3>Naman Singh</h3>
+          <p>Designer</p>
+          <div class="icons-t">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/in/naman-singh-9aa209209">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/namansingh27">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="namanbhatia27@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
         </div>
-        <div class="sharing-container">
-          <p class="expire">Link expires in 24 hrs</p>
-          <div class="input-container">
-            <input type="text" id="fileURL" value="prince" readonly />
-            <svg
-              class="w-18 h-18 copyBtn"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
-              ></path>
-            </svg>
-          </div>
-          <p class="option">Or Send Via Email</p>
-          <div class="email-container">
-            <form method="POST" action="/send" id="emailForm">
-              <div class="field">
-                <label for="sender">Your email</label>
-                <input type="email" required name="from-email" id="sender" autocomplete="off"/>
-              </div>
-              <div class="field">
-                <label for="receiver">Receiver's email</label>
-                <input type="email" required name="to-email" id="receiver" autocomplete="off"/>
-              </div>
-              <button type="submit">Send</button>
-            </form>
-          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!--           CALL SECTION        -->
+
+<section class="call">
+    <h1>Interested to work with us?<br>Work from Anywhere in The World</h1>
+    <a href="#contactUs" class="btn">CONTACT US</a>
+</section>
+
+
+
+<!--    CONTACT SECTION       -->
+
+
+<section class="location" id="contact"> 
+    
+    <h1> OUR OFFICE </h1>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1737344617463!2d77.0184304!3d28.5945644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1aafdb891567%3A0x10d270731c930a87!2sGuru%20Gobind%20Singh%20Indraprastha%20University!5e0!3m2!1sen!2sin!4v1636892894113!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+
+<!--    CONTACT FORM        -->
+
+<section class="contact" id="contactUs">
+<div class="row">
+    <div class="contact-col">
+        <div>
+            <i class="fas fa-home"></i>
+            <span>
+                <h5>Golf Course Rd, Sector 16 C, Dwarka</h5>
+                <p>Delhi, India</p>
+            </span>
         </div>
-      </section>
-      <div class="upload-vector"></div>
-    </main>
-    <!-- toast -->
-    <div class="toast">Done</div>
-    <script src="index.js"></script>
-  </body>
+
+        <div>
+            <i class="fas fa-phone"></i>
+            <span>
+                <h5>+91 9987586541</h5>
+                <p>Monday to Saturday, 10AM to 5PM</p>
+            </span>
+        </div>
+      
+        <div>
+            <i class="fas fa-envelope"></i>
+            <span>
+                <h5>getinfo@shareIT.com</h5>
+                <p>Email us Your Queries</p>
+            </span>
+        </div>
+</div>
+
+<div class="contact-col">
+    <form>
+        <input type="text" name="Name" id="fullName" placeholder="Full Name" autocomplete="off" required>
+        <input type="email" name="Email" id="email_id" placeholder="Email" autocomplete="off" required>
+        <input type="text" name="Subject" id="subject" placeholder="Subject" autocomplete="off" required>
+        <textarea rows="8" name="Message" id="message" placeholder="Your Message" autocomplete="off" required></textarea>
+    </form>
+    <button onclick="SendMail()" class="btne red-btn">Send Message</button>
+</div>
+
+</section>
+
+<!--  arrow function  -->
+<section>
+    <a class="gotopbtn" href="#"> <i class="fas fa-chevron-up"></i> </a>
+</section>
+
+
+
+<!--   footer       -->
+
+<section class="footer">
+    <p>You can reach us on the above credentials. <br>Thank you for staying by, you can also help us by donating, so that we can continue this website</p>
+
+    <div class="copyrightDiv">
+      <span class="material-icons copyrightIcon">copyright</span>
+      <h1 class="copyrightHeading" style="display:inline-block">Team Unicorn | 2023 ShareMeFile - All Rights Reserved.</h1>
+    </div>
+
+    <div class="icons">
+      <a href="https://m.facebook.com/100012573480233/"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/Taranjotsingh23?t=mAHqoNvLaArJpV5KWhGubg&s=08"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/taranjot9229/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/taranjot-singh-bbb875202"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+<script src="frontScript.js"></script>
+</body>
 </html>
